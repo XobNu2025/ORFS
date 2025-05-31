@@ -41,9 +41,11 @@ These are the values for LB ADDON PLACE DENSITY you should put in :
 - **(ibex, sky130hd)**: 0.2  
 - **(ibex, asap7)**: 0.2  
 - **(jpeg, sky130hd)**: 0.15  
-- **(jpeg, asap7)**: 0.4127  
+- **(jpeg, asap7)**: 0.4127
 
 Further, make sure to use the provided tcl scripts and link them in the configuration. Look at the fastasap and fastsky tcl files, and how it is linked in config.mk provided, for config.mk.
+
+# IMPORTANT : YOU NEED TO PUT YOUR API KEY FOR ANTHROPIC IN LINE 308 OF OPTIMIZE.PY, AND OPENAI API KEY IN LINE 418 OF PROMPTS.PY
 
 Now, each iteration, you will see something like the asap7_aes.csv in the designs/asap7/aes directory, or asap7_ibex.csv in the designs/asap7/ibex directory, and so on, as we complete one iteration of the TOTAL_ITERS.
 
